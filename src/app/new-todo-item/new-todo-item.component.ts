@@ -20,7 +20,7 @@ taskToEdit: any = {};
     this.taskService.addTask(todo);
   }*/
 
-  submit(todoinput:string):void{
+  submit():void{
     
     if (this.myTask !== null) {
       //Get the input value
