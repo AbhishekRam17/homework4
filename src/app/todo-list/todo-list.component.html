@@ -1,0 +1,6 @@
+<ul *ngFor="let task of tasks | async; let i = index" [attr.data-index]="i">
+    <li>
+      ({{i + 1}})
+      <app-todo-item [id]="task.id" [description]="task.description" [dueDate]="task.dueDate"></app-todo-item>
+    </li>
+  </ul>

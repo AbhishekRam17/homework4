@@ -1,0 +1,12 @@
+
+<td> {{description}}</td>
+
+<div class = "gaara" >{{description}} 
+<button class = "d1" [ngClass]= "{'urgent' : dueDate=='urgent'}" (click)="changeduedate('urgent')">urgent</button>
+<button class = "d1" [ngClass]= "{'days' : dueDate=='days'}" (click)="changeduedate('days')">days</button>
+<button class = "d1" [ngClass]= "{'week' : dueDate=='week'}" (click)="changeduedate('week')">week</button>
+
+<button class="btn btn-outline-danger" (click)="deletetask(id)">
+    <i class="fa fa-edit">Delete</i>
+  </button>
+</div>
